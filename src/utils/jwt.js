@@ -12,7 +12,7 @@ export const sendToken = (user, res) => {
     expires: new Date(Date.now() + 86400000),
     httpOnly: true,
     secure: false,
-    sameSite: "strict",
+    sameSite: "none",
     maxAge: 86400000,
   });
   return token;
