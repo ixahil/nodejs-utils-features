@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container m-auto w-full p-4 pt-16 sm:w-1/2 ">
+
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <!-- Main Content -->
+    <main class="container mx-auto py-8">
+
+        <!-- Introduction -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Introduction</h2>
+            <p class="text-gray-700">Welcome to API documentation. This documentation provides information about the
+                available endpoints and how to use them.</p>
+        </section>
+
+        <!-- Endpoints -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Endpoints</h2>
+            <h2 class="text-xl font-bold mb-4 underline">User Endpoints</h2>
+            <!-- Example Endpoint -->
+            <div class="border border-gray-300 rounded-md p-4 mb-4 space-y-2">
+                <div class="flex gap-4 items-center">
+                    <span class="text-lg font-semibold mb-2 bg-yellow-500 text-white p-1 rounded">POST</span>
+                    <h3 class="text-xl font-semibold mb-2">/api/v1/register</h3>
+                </div>
+                <p class="text-gray-700">Register User with Name, Email, Password - Email should be unique</p>
+            </div>
+
+            <div class="border border-gray-300 rounded-md p-4 mb-4 space-y-2">
+                <div class="flex gap-4 items-center">
+                    <span class="text-lg font-semibold mb-2 bg-yellow-500 text-white p-1 rounded">POST</span>
+                    <h3 class="text-xl font-semibold mb-2">/api/v1/login</h3>
+                </div>
+                <p class="text-gray-700">login User with Email, Password</p>
+            </div>
+
+            <div class="border border-gray-300 rounded-md p-4 mb-4 space-y-2">
+                <div class="flex gap-4 items-center">
+                    <span class="text-lg font-semibold mb-2 bg-green-500 text-white p-1 rounded">GET</span>
+                    <h3 class="text-xl font-semibold mb-2">/api/v1/me</h3>
+                </div>
+                <p class="text-gray-700">Get User details - user should be login and sending jwt in cookies</p>
+            </div>
+
+            <!-- Add more endpoints as needed -->
+        </section>
+
+    </main>
+
+
+
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+
+</body>
+
+</html>

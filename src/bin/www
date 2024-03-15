@@ -1,0 +1,13 @@
+import { configDotenv } from "dotenv";
+
+import app from "../app.js";
+import DBConnection from "../config/db.js";
+
+configDotenv();
+
+const port = process.env.PORT;
+
+app.listen(port, () => {
+  console.log("server listening on port : " + port);
+  DBConnection();
+});
