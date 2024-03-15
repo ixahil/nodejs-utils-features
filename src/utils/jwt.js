@@ -14,6 +14,7 @@ export const sendToken = (user, res) => {
     secure: false,
     sameSite: "none",
     maxAge: 86400000,
+    domain: "http://localhost",
   });
   return token;
 };
