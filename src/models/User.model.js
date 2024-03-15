@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import AppError from "../utils/appError.js";
+import AppError from "../utils/AppError.js";
 import bcrypt from "bcryptjs";
 
 const UserSchema = new Schema({
